@@ -1,0 +1,390 @@
+/*General Styles*/
+body {
+  color: #06074c;
+  font-family: Cabin Sketch;
+  font-weight: 1000;
+  line-height: 1.5;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('bckg.jpg');
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+p {
+  color: #06074c;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.formality {
+  font-size: 20px;
+}
+
+#main-content, #about-content, #goals-content, #contact-content, #projects-content {
+  background-color: #008ea7;
+  text-align: left;
+  border-radius: 10px;
+  opacity: 0.9;
+  margin: 40px 40px;
+  padding: 20px 20px;
+  font-weight: 600;
+}
+
+.side-by-side-index, .side-by-side-contact, .side-by-side-about{
+  display: flex;
+  gap: 0;
+  align-items: center;
+  text-align: left;
+  margin: 40px 40px;
+  padding: 20px 20px;
+  background-color: #008ea7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.side-by-side-contact {
+  gap: 20px;
+}
+
+/*Header Styles*/
+header {
+  background-color: #964734;
+  border-radius: 10px;
+  margin: 0px 40px;
+  padding: 20px 20px;
+  opacity: 0.95;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 70px;
+  color: azure;
+  font-family: 'Cinzel Decorative';
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Aboreto';
+  font-size: 45px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Abyssinica SIL';
+  font-size: 33px;
+}
+
+header a {
+  font-weight: bold;
+  font-size: 34px;
+  font-family: 'Aclonica';
+  text-decoration: none;
+  color: #06074c;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+header a:hover {
+  background-color: azure;
+  border-radius: 7px;
+  transform: scale(1.1);
+}
+
+.welcome {
+  text-align: left;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  height: 500px;
+  border: none;
+  object-fit: cover;
+}
+
+
+/*Image Styles*/
+img {
+  width: 650px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+img:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.logo-main {
+  width: auto;
+  height: 469px
+}
+
+
+/*Footer Styles*/
+footer {
+  background-color: #0fa4af;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 20px;
+  opacity: 0.9;
+  margin: 20px 20px;
+  font-size: 25px;
+}
+
+footer a {
+  font-weight: bold;
+  font-family: 'Bitcount Grid Single';
+  text-decoration: none;
+  margin: 30px 30px;
+  color: #ae4242;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer a:hover {
+  background-color: azure;;
+  border-radius: 7px;
+  transform: scale(1.1);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+
+/*List Styles*/
+ul, li, ol {
+  color: #06074c;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+
+}
+.about-list, .projects-list, .index-list {
+  list-style-image: url(money.png);
+  list-style-position: inside;
+}
+
+
+/*Table Styles*/
+table, th, td{
+  border-style: solid;
+  font-size: 30px;
+  font-weight: 900;
+  border-collapse: collapse;
+  border-color: #93e2e2;
+  text-align: center;
+  height: 50px;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disclaimer {
+  text-align: center;
+}
+
+th:hover {
+  background-color: antiquewhite;
+}
+
+td:hover {
+  background-color: azure;
+}
+
+tr:hover {
+  background-color: antiquewhite;
+}
+
+
+/*Form Styles*/
+form {
+  font-size: 26px;
+  font-weight: 900;
+  background-color: transparent;
+  width: 100%;
+  margin: 15px 15px;
+}
+
+fieldset {
+  border: 1px solid #dd9139;
+  border-radius: 10px;
+  font-weight: 900;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+legend {
+  border: 1px solid #443737;
+  font-weight: 900;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #b53a3a;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  font-size: 22px;
+  background-color: #b96b11;
+  border: none;
+  color: #272d5c;
+  cursor: text;
+  font-family: Cabin Sketch;
+  border-radius: 10px;
+  font-weight: 900;
+  padding: 15px 15px 15px 40px;
+}
+
+input[type="date"] {
+  text-decoration: none;
+  font-size: 22px;
+  background-color: #b96b11;
+  border: none;
+  color: #391c1c;
+  cursor: text;
+  font-family: Cabin Sketch;
+  border-radius: 10px;
+  font-weight: 900;
+  padding: 15px 15px 15px 15px;
+}
+
+textarea{
+  text-align: left;
+  font-weight: 900;
+  font-size: 22px;
+  background-color: #b96b11;
+  color: #272d5c;
+  cursor: text;
+  font-family: Cabin Sketch;
+  border-radius: 10px;
+}
+
+input[type="text"]{
+  background-image: url(user.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+input[type="tel"]{
+  background-image: url(phone-call.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  width: 230px;
+}
+
+input[type="email"]{
+  background-image: url(email.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  width: 350px;
+}
+
+input[type="submit"]{
+  border-radius: 5px;
+  font-size: 21px;
+  font-family: Cabin Sketch;
+  background-color: #b96b11;
+  padding: 10px 20px;
+  border: none;
+}
+
+input[type="submit"]:hover{
+  background-color: #d6f7f7;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #a19090;
+  border-radius: 50px;
+  cursor: pointer;
+  accent-color: #bf7116;
+}
+
+.verify {
+  background-color: #bf7116;
+  border-radius: 8px;
+  border-style: solid;
+  width: 283px;
+  padding: 10px 10px 20px 10px;
+  margin: 20px 20px;
+  height: 30px;
+  align-content: center;
+  align-items: center;
+  background-image: url(recaptcha.png);
+  background-repeat: no-repeat;
+  background-position: 249px center;
+}
+
+option[value="choose"], option[value="ig"], option[value="facebook"], option[value="youtube"], option[value="tiktok"], option[value="commercial"], option[value="friends"], option[value="google"] {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #a19090;
+  border-radius: 50px;
+  border-style: solid #008ea7;
+  font-family: Cabin Sketch;
+  font-size: 20px;
+  color: #391c1c;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration-color: none;
+  text-decoration-skip: none;
+  background-color: #bf7116;
+}
+
+select {
+  background-color: #b06711;
+  width: 140px;
+  height: 56px;
+  border-style: solid #383434;
+  border-radius: 10px;
+  font-family: Cabin Sketch;
+  font-size: 26px;
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 26px;
+  font-weight: 100;
+  color: #391c1c;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.side-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ }
