@@ -16,4 +16,5 @@ are available upon request.
 
 Contact:
 - GitHub: @SirongaDeOrora
-- Email: (add if you want)
+- Email: ethansirengo2.it@gmail.com
+         sirongadeorora@gmail.com
