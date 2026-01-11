@@ -1,6 +1,7 @@
 # 🌐Website Demo
 
 This is a public demo of a website project.
+Deploy link:  https://ethandeorora.github.io/Banking-Website-Desktop-Oriented-Demo/
 
 ## 🎯Purpose
 - Demonstrates layout and design
